@@ -1,0 +1,4 @@
+paramiko==5.0.0
+fastapi
+uvicorn[standard]
+pydantic
