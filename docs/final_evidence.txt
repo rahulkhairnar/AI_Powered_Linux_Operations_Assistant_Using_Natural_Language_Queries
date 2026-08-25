@@ -1,32 +1,24 @@
-===== ROOTOPS EVIDENCE =====
+===== ROOTOPS FINAL EVIDENCE =====
 
-### CONTROLLER
+CONTROLLER:
 rootops-server-01
     inet 192.168.85.129/24 brd 192.168.85.255 scope global ens33
 
-### TARGET
+TARGET SSH:
 rootops-server-02
 
-### TARGET STATUS
- 16:38:09 up  1:36,  3 users,  load average: 0.10, 0.03, 0.01
+TARGET STATUS:
+ 16:46:13 up  1:44,  3 users,  load average: 0.00, 0.00, 0.00
                total        used        free      shared  buff/cache   available
-Mem:           3.8Gi       519Mi       3.1Gi       1.5Mi       402Mi       3.3Gi
+Mem:           3.8Gi       525Mi       3.1Gi       1.5Mi       402Mi       3.3Gi
 Swap:          3.8Gi          0B       3.8Gi
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/nvme0n1p2   20G  7.6G   11G  41% /
 
-### PROCESSES
-USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root        7536  0.1  1.1 547920 46996 ?        Ssl  15:59   0:03 /usr/libexec/fwupd/fwupd
-root         492  0.0  0.6 288952 27292 ?        SLsl 15:01   0:01 /sbin/multipathd -d -s
-root         895  0.0  0.5 109692 23184 ?        Ssl  15:01   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-root         441  0.0  0.4  66904 16036 ?        S<s  15:01   0:01 /usr/lib/systemd/systemd-journald
-root         824  0.0  0.3 468912 13752 ?        Ssl  15:01   0:00 /usr/libexec/udisks2/udisksd
-
-### PARAMIKO
+PARAMIKO:
 5.0.0
 
-### TESTS
+PYTEST:
 ============================= test session starts ==============================
 platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /root/rootops-ai/venv/bin/python3
 cachedir: .pytest_cache
@@ -36,4 +28,4 @@ collecting ... collected 1 item
 
 tests/test_remote.py::test_ssh_server02 PASSED                           [100%]
 
-============================== 1 passed in 0.42s ===============================
+============================== 1 passed in 0.44s ===============================

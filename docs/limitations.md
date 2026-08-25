@@ -1,21 +1,19 @@
 # Current Limitations
 
-## Natural-language understanding
+- Natural-language processing currently uses controlled command mappings.
+- The lab uses a two-server architecture.
+- The primary interface is command-line based.
+- The current system focuses on monitoring and controlled execution.
+- Automatic remediation and full LLM-based intent generation are future enhancements.
 
-The current prototype uses controlled natural-language command mappings rather than unrestricted LLM-generated commands.
+# Future Roadmap
 
-## Security model
-
-The prototype currently uses SSH key authentication but still operates with administrative privileges in the lab environment.
-
-## Scalability
-
-The current deployment demonstrates a two-server architecture.
-
-## User interface
-
-The primary interface is command-line based.
-
-## Automation
-
-The current implementation focuses on monitoring and controlled execution. Automatic remediation is a future capability.
+- LLM-based intent classification
+- Expanded Linux operations
+- Web dashboard
+- Multi-server orchestration
+- Centralized logging and alerting
+- Anomaly detection
+- Predictive monitoring
+- Safe automated remediation
+- RBAC and secrets management
